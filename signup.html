@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form validation with JavaScript</title>
+ <style> 
+ #wrapper {
+  width: 30%;
+  height:65vh;
+  margin: 20px auto;
+  padding: 50px;
+  background: #c7c7c7;
+  
+}
+form {
+  margin: 30px auto;
+}
+.textInput {
+  border: none;
+  height: 28px;
+  margin: 2px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+}
+.textInput:focus {
+  outline: none;
+}
+.btn {
+  width: 50%;
+  border: none;
+  margin-top: 5px;
+  margin-bottom:10px;
+  color: white;
+  background-color: #3b5998;
+  border-radius: 5px;
+  padding: 12px;
+  margin-left:16vh;
+}
+input[type="submit"]:hover
+  {
+ cursor:pointer;
+ background:#038c0c;
+ color:#000;
+ }
+  a{
+                text-decoration: none;
+          
+            }  
+            a:hover{
+                background-color:red;
+			
+            }
+#header{
+    margin-top: 3vh;  
+    width: 100%;
+    text-align: center;
+    background-color: chocolate;
+   }
+ </style>
+</head>
+<body>
+    <div id="header"><h1>Registration Form</h1></div>
+<div id="wrapper"><center><h2><u>CREATE ACCOUNT </u></h2></center>
+   <form method="POST">
+   	<div id="username_div">
+   	  <label>Username</label> <br>
+   	  <input type="text" name="username" id="uname" class="textInput" >
+   	  <div id="name_error"></div>
+   	</div>
+   	<div id="password_div">
+   	  <label>Password</label> <br>
+   	  <input type="password" name="password" id="pwd" class="textInput" >
+       </div>
+	<div id="dob_div">
+   	   <label>Date Of Birth</label> <br>
+   	   <input type="date" name="dob" id="dob" class="textInput">
+   	   <div id="dob_error"></div>
+   	</div>
+	<div id="email_div">
+   	  <label>Email</label> <br>
+   	  <input type="email" name="email" id="email" class="textInput" >
+   	  <div id="email_error"></div>
+   	</div>
+	<div id="mobno_div">
+   	   <label>Mobile Number</label> <br>
+   	   <input type="text" name="mobno" class="textInput" id="mobno" >
+   	   <div id="mobno_error"></div>
+   	</div>
+   	<div>
+   	<input type="submit" id="signup" name="register" value="Register" class="btn">
+   	</div>
+   		<center><a href="/index">Index Page</a></center>
+   </form>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/signup.js"></script>
+    </body>
+</html>

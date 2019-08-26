@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form validation with JavaScript</title>
+ <style> 
+ #wrapper {
+  width: 30%;
+  height:40vh;
+  margin: 20px auto;
+  padding: 50px;
+  background: #c7c7c7;
+  
+}
+form {
+  margin: 30px auto;
+}
+.textInput {
+  border: none;
+  height: 28px;
+  margin: 2px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+}
+.textInput:focus {
+  outline: none;
+}
+.btn {
+  width: 50%;
+  border: none;
+  margin-top: 5px;
+  margin-bottom:10px;
+  color: white;
+  background-color: #3b5998;
+  border-radius: 5px;
+  padding: 12px;
+  margin-left:16vh;
+}
+input[type="submit"]:hover
+  {
+ cursor:pointer;
+ background:#038c0c;
+ color:#000;
+ }
+  a{
+                text-decoration: none;
+          
+            }  
+            a:hover{
+                background-color:red;
+			
+            }
+#header{
+    margin-top: 3vh;  
+    width: 100%;
+    text-align: center;
+    background-color: chocolate;
+   }
+ </style>
+</head>
+<body>
+    <div id="header"><h1>Delete Form</h1></div>
+<div id="wrapper"><center><h2><u>Delete ACCOUNT </u></h2></center>
+   <form method="POST">
+   <div id="username_div">
+   	  <label>Id</label> <br>
+   	  <input type="text" name="username" id="id" class="textInput" readonly>
+   	  <div id="name_error"></div>
+   	</div>
+   	<div id="username_div">
+   	  <label>Username</label> <br>
+   	  <input type="text" name="username" id="uname" class="textInput" readonly>
+   	  <div id="name_error"></div>
+   	</div>
+	<div id="mobno_div">
+   	   <label>Mobile Number</label> <br>
+   	   <input type="text" name="mobno" class="textInput" id="mobno" readonly>
+   	   <div id="mobno_error"></div>
+   	</div>
+   	<div>
+   	<input type="submit" id="delete" name="register" value="Delete" class="btn">
+   	</div>
+   		<center><a href="/index">Index Page</a></center>
+   </form>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/delete.js"></script>
+       <script src="js/edit.js"></script>
+    </body>
+</html>
